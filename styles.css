@@ -17,3 +17,20 @@ img {
 .background {
     height: 100vh;
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 100%;
+}
+
+#form {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.form-controls {
+    width: 700px;
+}
