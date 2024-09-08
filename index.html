@@ -12,9 +12,42 @@
         </div>
         <div class="form-container">
             <h1>Phantom Troupe is hiring!</h1>
-            <form action="" method="get">
+            <form action="" method="get" id="form">
+                <h2>Fill out the form please!</h2>
+                <fieldset>
+                    <legend>Identification</legend>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required />
 
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" />
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone-number" />
+                </fieldset>
+                <ul>
+                    <li>
+                        <label for="why-join">Why you want to join?</label>
+                        <textarea name="why-join" id="why-join" required /></textarea>
+                    </li>
+                    <li>
+                        <label for="hisoka">Do you know Hisoka's whereabouts?</label>
+                        <input type="checkbox" id="hisoka" name="hisoka" required />
+                    </li>
+                </ul>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="pwd" required />
+
+                <label for="confirm-pwd">Confirm Password</label>
+                <input type="password" id="confirm-pwd" name="confirm-pwd" required />
             </form>
+
+            <button type="submit" form="form">Submit Application</button>
         </div>
     </body>
 </html>
