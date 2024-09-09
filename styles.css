@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --size-for-layout: 700px;
+}
+
 body {
     display: flex;
     margin: 0;
@@ -37,16 +41,20 @@ img {
 }
 
 .form-controls {
-    width: 700px;
+    width: var(--size-for-layout);
 }
 
 .declaration {
-    width: 700px;
+    width: var(--size-for-layout);
     
     display: flex;
     flex-direction: column;
 }
 
 button {
-    align-self: flex-start;
+    padding: 12px;
+}
+
+.btn-wrapper {
+    width: var(--size-for-layout);
 }
