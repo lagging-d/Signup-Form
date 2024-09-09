@@ -8,6 +8,15 @@
     --size-for-layout: 700px;
 }
 
+@font-face {
+    font-family: 'whatdo';
+    src: url('fonts/whatdo-dydpr-webfont.woff2') format('woff2'),
+         url('fonts/whatdo-dydpr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     display: flex;
     margin: 0;
@@ -58,6 +67,7 @@ img {
 
 button {
     padding: 12px;
+    appearance: none;
 }
 
 .btn-wrapper {
@@ -84,6 +94,7 @@ p {
 h2 {
     margin-top: 0;
     margin-bottom: 40px;
+    font-size: 2rem;
 }
 
 fieldset {
@@ -105,4 +116,19 @@ textarea {
 
 input {
     display: block;
+}
+
+h2,
+h1 {
+    font-family: "whatdo";
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+label,
+p, 
+button {
+    font-family: Helvetica, sans-serif;
 }
