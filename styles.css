@@ -25,7 +25,7 @@ img {
 .form-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
     width: 100%;
@@ -50,7 +50,7 @@ img {
 .declaration {
     width: var(--size-for-layout);
 
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     
     display: flex;
     flex-direction: column;
@@ -62,7 +62,6 @@ button {
 
 .btn-wrapper {
     width: var(--size-for-layout);
-    margin-bottom: 70px;
     margin-top: 20px;
 }
 
@@ -71,10 +70,35 @@ p {
 }
 
 .btn-form-wrapper {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     width: 100%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+/* FORM CONTROLS */
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+label {
+    font-size: 20px;
+}
+
+textarea {
+    display: block;
 }
