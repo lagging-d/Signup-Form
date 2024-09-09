@@ -156,7 +156,8 @@ ul {
     padding-left: 0;
 }
 
-ul > li:last-child {
+ul > li:last-child,
+.checkbox-container {
     display: flex;
 }
 
@@ -166,4 +167,14 @@ ul > li:first-child {
 
 input[type="checkbox"] {
     width: fit-content;
+}
+
+.checkbox-container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.finalAgreements {
+    width: 700px;
+    margin-top: 20px;
 }
