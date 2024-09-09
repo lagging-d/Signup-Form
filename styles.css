@@ -46,6 +46,8 @@ img {
 
 .declaration {
     width: var(--size-for-layout);
+
+    margin-bottom: 70px;
     
     display: flex;
     flex-direction: column;
@@ -57,4 +59,8 @@ button {
 
 .btn-wrapper {
     width: var(--size-for-layout);
+}
+
+p {
+    margin: 2px 0 2px 0;
 }
