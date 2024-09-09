@@ -34,10 +34,13 @@ img {
 #form {
     background-color: aliceblue;
     width: 100%;
+    height: 400px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
 }
 
 .form-controls {
@@ -59,8 +62,19 @@ button {
 
 .btn-wrapper {
     width: var(--size-for-layout);
+    margin-bottom: 70px;
+    margin-top: 20px;
 }
 
 p {
     margin: 2px 0 2px 0;
+}
+
+.btn-form-wrapper {
+    margin-bottom: 50px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
