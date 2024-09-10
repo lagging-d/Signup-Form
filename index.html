@@ -13,13 +13,10 @@
         <div class="form-container">
             <div class="declaration">
              <h1>Phantom Troupe is hiring!</h1>
-             <p>Mysterious band of misfits from Meteor City is looking for a new blood!</p>
+             <p>Mysterious band of misfits from Meteor City is looking for new blood!</p>
              <p>We recently undergo some staff changes due to a couple of unfortunate encounters,
                 hence why we're looking for strong, reliable and crazy comrades with whom to conduct
                 our evil deeds!
-             </p>
-             <p>If you love crushing the weak and constantly being in death-and-life ordeals:
-                fill out the form below!
              </p>
             </div>
             <div class="btn-form-wrapper">
@@ -28,43 +25,57 @@
                     <h2>DON'T LIE PLEASE</h2>
                     <fieldset aria-label="Identification">
                         <div class="firstName">
-                         <label for="first-name">FIRST NAME</label>
+                         <label for="first-name">FIRST NAME
+                            <span aria-label="required">*</span>
+                         </label>
                          <input type="text" 
                                 id="first-name" 
-                                name="first-name" 
+                                name="first-name"
+                                placeholder="Gon" 
                                 required />
                         </div>
                         <div class="secondName">
                          <label for="last-name">LAST NAME</label>
                          <input type="text" 
                                 id="last-name" 
-                                name="last-name" />
+                                name="last-name"
+                                placeholder="Freecs" />
                         </div>
                     </fieldset>
                     <fieldset aria-label="Contact Information">
                         <div class="email">
-                         <label for="email">EMAIL</label>
+                         <label for="email">EMAIL
+                            <span aria-label="required">*</span>
+                         </label>
                          <input type="email" 
                                 id="email" 
-                                name="email" 
+                                name="email"
+                                placeholder="gonfreecs@hunter.com" 
                                 required />
                         </div>
                         <div class="phoneNumber">
                          <label for="phone-number">PHONE NUMBER</label>
                          <input type="tel" 
                                 id="phone-number" 
-                                name="phone-number" />
+                                name="phone-number"
+                                placeholder="405-99-404-403"
+                                pattern="\d{3}\d{2}\d{3}\d{3}" />
                         </div>
                     </fieldset>
                     <ul>
                         <li>
-                            <label for="why-join">Why do you want to join?</label>
+                            <label for="why-join">Why do you want to join?
+                                <span aria-label="required">*</span>
+                            </label>
                             <textarea name="why-join" 
-                                        id="why-join" 
+                                        id="why-join"
+                                        maxlength="150" 
                                         required /></textarea>
                         </li>
                         <li>
-                            <label for="hisoka">Do you know Hisoka's whereabouts?</label>
+                            <label for="hisoka">Do you know Hisoka's whereabouts?
+                                <span aria-label="required">*</span>
+                            </label>
                             <input type="checkbox" 
                                     id="hisoka" 
                                     name="hisoka" 
@@ -73,14 +84,18 @@
                     </ul>
                     <fieldset aria-label="Code phrase">
                     <div class="password">
-                     <label for="password">PASSWORD</label>
+                     <label for="password">PASSWORD
+                        <span aria-label="required">*</span>
+                     </label>
                      <input type="password" 
                             id="password" 
                             name="pwd" 
                             required />
                     </div>
                     <div class="confirmPwd">
-                     <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                     <label for="confirm-pwd">CONFIRM PASSWORD
+                        <span aria-label="required">*</span>
+                     </label>
                      <input type="password" 
                             id="confirm-pwd" 
                             name="confirm-pwd" 
@@ -93,7 +108,9 @@
                 <div class="finalAgreements">
                     <div class="checkbox-container">
                     <label for="payment-agreement">I understand the nature of <a href="https://www.nstp.org/article/not-reporting-illegal-income-is-a-tax-crime-">unreported income</a>
-                                                that comes with the job.</label>
+                                                that comes with the job.
+                        <span aria-label="required">*</span>
+                    </label>
                     <input type="checkbox" 
                             id="payment-agreement" 
                             name="payment-agreement" 
@@ -101,7 +118,8 @@
                             required />
                     </div>
                     <div class="checkbox-container">
-                    <label for="legal-agreement">I understand the <a href="https://hunterxhunter.fandom.com/wiki/Category:Wanted_Criminals">legal peculiarities</a> of the job.</label>
+                    <label for="legal-agreement">I understand the <a href="https://hunterxhunter.fandom.com/wiki/Category:Wanted_Criminals">legal peculiarities</a> of the job.
+                        <span aria-label="required">*</span></label>
                     <input type="checkbox" 
                             id="legal-agreement" 
                             name="legal-agreement"
