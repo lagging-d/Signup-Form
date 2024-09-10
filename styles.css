@@ -76,14 +76,16 @@ img {
 button {
     padding: 12px;
     appearance: none;
-    font-size: 16px;
+    font-size: 20px;
     font-family: Helvetica;
+    font-weight: 800;
 
     border-radius: 3px;
     border: none;
 
     background-color: var(--color-pink);
     color: var(--color-blue);
+    box-shadow: 1px 1px 10px 4px #c3aac9;
 }
 
 .btn-wrapper {
@@ -147,7 +149,9 @@ textarea {
 input {
     display: block;
     width: 200px;
-    padding: 5px;
+    padding: 6px;
+
+    font-size: 16px;
 
     border: 1px solid rgb(155, 155, 155);
 }
@@ -221,9 +225,15 @@ a:visited {
 
 input:focus,
 textarea:focus {
-    border: 4px outset var(--color-blue);
+    border: 1px solid var(--color-blue);
+    box-shadow: 1px 1px 10px 2px var(--color-blue);
 }
 
-input:invalid {
+input:user-invalid,
+textarea:user-invalid {
     border: 1px solid red;
+}
+
+button:hover {
+    cursor: pointer;
 }
